@@ -1,0 +1,143 @@
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida", "Verdana", "Geneva", sans-serif;
+  background-color: #edeae7;
+  color:black;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.4em;
+  padding-bottom: 10px;
+}
+
+#header {
+  background-color: #99D1F0;
+  color: #DAECF6;	
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#main {
+  background-color: #EDEAE7;
+  color:black;
+  margin-right: 20%;
+  margin-left: 40px;
+  margin-top: 0px;
+  padding-right: 10px;
+  border-right:solid 1px silver;
+}
+
+#side {
+  float: right;
+  width: 20%;
+  margin-top: 0;
+}
+
+#side table { 
+  padding-left: 20px
+} 
+
+#side th { 
+   padding: 0;
+}
+
+#side td {
+  border: 1px solid black;
+}
+
+#side ul {
+  padding-left: 20px;
+}
+
+#nav {
+  background-color: #6ba3c6;
+  color:black;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#nav a {
+  border-bottom:1px dotted #333333; 
+  color:#333333; 
+  background-color: #6ba3c6; 
+  text-decoration:none;
+} 
+
+h1 {
+    font-size: 7em; 
+    font-weight: bold; 
+    margin: 0;
+    padding-top: 0px;
+    letter-spacing: -0.1em;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 1.4em; 
+    color: #fd6600;
+    background-color: #edeae7;
+    font-weight: bold; 
+    letter-spacing: -0.07em;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h2 a {
+    font-size: 0.7em;
+    color: #fd6600;
+    background-color: #edeae7;
+    font-weight: bold;
+    letter-spacing: -0.07em;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-bottom: none;
+}
+
+h2 a:hover {
+    border-bottom: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+li {
+  padding-bottom: 1em;
+}
+
+a {
+  border-bottom:1px dotted #333333; 
+  color:#333333; 
+  background-color: #edeae7;
+  text-decoration:none;
+} 
+
+.ext-link { 
+  background: url(static/ext-link.gif) no-repeat 0 58%; 
+  padding-left: 16px 
+}
+* html .ext-link { background-position: 0 .35em } /* ie fix */
+
+a:hover
+{ 
+  border-bottom:1px dotted #666666; 
+  color:#666666; 
+  background-color: #edeae7;
+  text-decoration:none;
+}
+
