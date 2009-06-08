@@ -5,15 +5,15 @@
 <meta http-equiv="refresh" content="30" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js" type="text/javascript"></script>
-<script src="/quanto.js" type="text/javascript"></script>
+<script src="quanto.js" type="text/javascript"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 </head>
 <body>
 <form method="post" action="" enctype="multipart/form-data">
 <input type="submit" name="clear stats" value="clear stats" /></form>
 <table border="1"><tr><th colspan="4"></th> <th colspan="3" id="time">Time (ms)</th> <th colspan="3" id="rows">Rows</th> <th id="query"></th></tr> <tr><th>Module</th> <th>Line</th> <th>Called</th> <th>Count</th> <th id="time">Total</th> <th id="time">Avg.</th> <th id="time">Max</th> <th id="rows">Total</th> <th id="rows">Avg.</th> <th id="rows">Max</th> <th id="query">Query</th></tr>
- <tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L41>encoding_to_transform</a></td> <td>41</td> <td>state51::Base::insert </td> <td>590</td> <td id="time">165.213</td> <td id="time">0.280022</td> <td id="time">23.097</td> <td id="rows">296</td> <td id="rows">0.501695</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L24>encoding_to_transform</a></td> <td>24</td> <td>state51::Base::fetch </td> <td>199</td> <td id="time">84.75</td> <td id="time">0.425879</td> <td id="time">4.311</td> <td id="rows">100</td> <td id="rows">0.502513</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+ <tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L41>encoding_to_transform</a></td> <td>41</td> <td>state51::Base::insert </td> <td>590</td> <td id="time">165.213</td> <td id="time">0.280022</td> <td id="time">23.097</td> <td id="rows">296</td> <td id="rows">0.501695</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L24>encoding_to_transform</a></td> <td>24</td> <td>state51::Base::fetch </td> <td>199</td> <td id="time">84.75</td> <td id="time">0.425879</td> <td id="time">4.311</td> <td id="rows">100</td> <td id="rows">0.502513</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -36,7 +36,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.name = 'medium_mp3')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Country.pm#L139>Country</a></td> <td>139</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">321.975</td> <td id="time">3.70086</td> <td id="time">11.506</td> <td id="rows">21228</td> <td id="rows">244</td> <td id="rows">244</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Country.pm#L139>Country</a></td> <td>139</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">321.975</td> <td id="time">3.70086</td> <td id="time">11.506</td> <td id="rows">21228</td> <td id="rows">244</td> <td id="rows">244</td> <td id="query"><p></p><div class="toggle">SELECT
     t1.id,
     t1._type,
     t1.create_time,
@@ -87,7 +87,7 @@ WHERE
     t1._type = 22           AND
     (t2.iso_code2 like '%%%%%%')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1710>ReleaseFormat</a></td> <td>1710</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">64.462</td> <td id="time">0.740943</td> <td id="time">1.379</td> <td id="rows">2001</td> <td id="rows">23</td> <td id="rows">23</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1710>ReleaseFormat</a></td> <td>1710</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">64.462</td> <td id="time">0.740943</td> <td id="time">1.379</td> <td id="rows">2001</td> <td id="rows">23</td> <td id="rows">23</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -103,7 +103,7 @@ WHERE
     t2.id = t3.id     AND
     t2._type = 180
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1722>ReleaseFormat</a></td> <td>1722</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">104.425</td> <td id="time">1.20029</td> <td id="time">5.339</td> <td id="rows">5307</td> <td id="rows">61</td> <td id="rows">61</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1722>ReleaseFormat</a></td> <td>1722</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">104.425</td> <td id="time">1.20029</td> <td id="time">5.339</td> <td id="rows">5307</td> <td id="rows">61</td> <td id="rows">61</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -118,7 +118,7 @@ WHERE
     t2.id = t3.id     AND
     t2._type = 256
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1728>ReleaseFormat</a></td> <td>1728</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">47.652</td> <td id="time">0.547724</td> <td id="time">1.2</td> <td id="rows">1131</td> <td id="rows">13</td> <td id="rows">13</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1728>ReleaseFormat</a></td> <td>1728</td> <td>state51::Base::fetch </td> <td>87</td> <td id="time">47.652</td> <td id="time">0.547724</td> <td id="time">1.2</td> <td id="rows">1131</td> <td id="rows">13</td> <td id="rows">13</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -175,7 +175,7 @@ WHERE
     t2.id = t3.id           AND
     t4.coll = 104411060 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Asset.pm#L412>Asset</a></td> <td>412</td> <td>state51::Base::fetch </td> <td>84</td> <td id="time">43.889</td> <td id="time">0.522488</td> <td id="time">1.67</td> <td id="rows">42</td> <td id="rows">0.5</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Asset.pm#L412>Asset</a></td> <td>412</td> <td>state51::Base::fetch </td> <td>84</td> <td id="time">43.889</td> <td id="time">0.522488</td> <td id="time">1.67</td> <td id="rows">42</td> <td id="rows">0.5</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -196,7 +196,7 @@ WHERE
     (t6.asset = 104411060)
 </div></td></tr>
 <tr><td>/usr/share/perl5/Moose/Meta/Method/Delegation</td> <td>91</td> <td>state51::Tangram::Storage::connect </td> <td>74</td> <td id="time">14.299</td> <td id="time">0.19323</td> <td id="time">0.479</td> <td id="rows">74</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">select * from (select 1+1) test</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1206>ReleaseFormat</a></td> <td>1206</td> <td>state51::Base::fetch </td> <td>52</td> <td id="time">43.896</td> <td id="time">0.844154</td> <td id="time">2.05</td> <td id="rows">1092</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1206>ReleaseFormat</a></td> <td>1206</td> <td>state51::Base::fetch </td> <td>52</td> <td id="time">43.896</td> <td id="time">0.844154</td> <td id="time">2.05</td> <td id="rows">1092</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -228,7 +228,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.releaseformat = 104411058)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Handler/Auth/Ed.pm#L79>Handler/Auth/Ed</a></td> <td>79</td> <td>state51::Base::fetch </td> <td>50</td> <td id="time">25.949</td> <td id="time">0.51898</td> <td id="time">1.203</td> <td id="rows">100</td> <td id="rows">2</td> <td id="rows">2</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Handler/Auth/Ed.pm#L79>Handler/Auth/Ed</a></td> <td>79</td> <td>state51::Base::fetch </td> <td>50</td> <td id="time">25.949</td> <td id="time">0.51898</td> <td id="time">1.203</td> <td id="rows">100</td> <td id="rows">2</td> <td id="rows">2</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -244,7 +244,7 @@ WHERE
     t2._type IN (58, 59)    AND
     (t3.name = 'cultivator' OR t3.name = 'editor')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Handler/Auth/Ed.pm#L35>Handler/Auth/Ed</a></td> <td>35</td> <td>state51::Base::fetch </td> <td>50</td> <td id="time">22.94</td> <td id="time">0.4588</td> <td id="time">4.65</td> <td id="rows">50</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Handler/Auth/Ed.pm#L35>Handler/Auth/Ed</a></td> <td>35</td> <td>state51::Base::fetch </td> <td>50</td> <td id="time">22.94</td> <td id="time">0.4588</td> <td id="time">4.65</td> <td id="rows">50</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -257,7 +257,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.name = 'state51')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Role.pm#L274>Role</a></td> <td>274</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>50</td> <td id="time">58.455</td> <td id="time">1.1691</td> <td id="time">11.747</td> <td id="rows">50</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Role.pm#L274>Role</a></td> <td>274</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>50</td> <td id="time">58.455</td> <td id="time">1.1691</td> <td id="time">11.747</td> <td id="rows">50</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -307,7 +307,7 @@ WHERE
     t2._type = 6            AND
     (t3.email = 'andy@state51.co.uk' AND t3.password = 'catweezle' AND t3.collective = 5948 AND tl1001.coll = t2.id AND tl1001.item = 64077)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Asset.pm#L449>Asset</a></td> <td>449</td> <td>state51::Base::fetch </td> <td>42</td> <td id="time">14.993</td> <td id="time">0.356976</td> <td id="time">1.004</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Asset.pm#L449>Asset</a></td> <td>449</td> <td>state51::Base::fetch </td> <td>42</td> <td id="time">14.993</td> <td id="time">0.356976</td> <td id="time">1.004</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -343,7 +343,7 @@ WHERE
     t2._type IN (246, 247, 260, 267, 258)    AND
     t4.coll = 104411060 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L43>View/Ed/Base</a></td> <td>43</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">8.677</td> <td id="time">0.34708</td> <td id="time">0.606</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L43>View/Ed/Base</a></td> <td>43</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">8.677</td> <td id="time">0.34708</td> <td id="time">0.606</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -356,7 +356,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.name = 'state51')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L62>View/Ed/Base</a></td> <td>62</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">15.505</td> <td id="time">0.6202</td> <td id="time">3.914</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L62>View/Ed/Base</a></td> <td>62</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">15.505</td> <td id="time">0.6202</td> <td id="time">3.914</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -386,7 +386,7 @@ WHERE
     t2.id = t3.id           AND
     t4.coll = 5948 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L63>View/Ed/Base</a></td> <td>63</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">13.753</td> <td id="time">0.55012</td> <td id="time">1.006</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L63>View/Ed/Base</a></td> <td>63</td> <td>state51::Base::fetch </td> <td>25</td> <td id="time">13.753</td> <td id="time">0.55012</td> <td id="time">1.006</td> <td id="rows">25</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -435,8 +435,8 @@ WHERE
     t2._type = 6            AND
     (t3.email = 'andy@state51.co.uk' AND t3.password = 'catweezle' AND t3.collective = 5948)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L681>Use</a></td> <td>681</td> <td>state51::Base::insert </td> <td>24</td> <td id="time">4.894</td> <td id="time">0.203917</td> <td id="time">0.346</td> <td id="rows">8</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/View.pm#L27>View/Ed/View</a></td> <td>27</td> <td>state51::Tangram::Driver::mysql::Storage::load </td> <td>22</td> <td id="time">267.035</td> <td id="time">12.138</td> <td id="time">87.001</td> <td id="rows">18</td> <td id="rows">0.818182</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L681>Use</a></td> <td>681</td> <td>state51::Base::insert </td> <td>24</td> <td id="time">4.894</td> <td id="time">0.203917</td> <td id="time">0.346</td> <td id="rows">8</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/View.pm#L27>View/Ed/View</a></td> <td>27</td> <td>state51::Tangram::Driver::mysql::Storage::load </td> <td>22</td> <td id="time">267.035</td> <td id="time">12.138</td> <td id="time">87.001</td> <td id="rows">18</td> <td id="rows">0.818182</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Encoding.include_packshot_in_encode,
     state51__Encoding.include_metadata_in_encode,
@@ -459,7 +459,7 @@ FROM
 WHERE
     state51__Base.id = '6674362'	AND
     state51__Base.id = state51__Encoding.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2260>MusicService</a></td> <td>2260</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">33.744</td> <td id="time">1.60686</td> <td id="time">7.816</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2260>MusicService</a></td> <td>2260</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">33.744</td> <td id="time">1.60686</td> <td id="time">7.816</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -509,7 +509,7 @@ WHERE
     t2._type = 127          AND
     ((t3.extension = 'mpg' OR t3.extension = 'wmv' OR t3.extension = 'avi') AND tl1005.coll = t2.id AND tl1005.item IN (104411061))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2262>MusicService</a></td> <td>2262</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">26.988</td> <td id="time">1.28514</td> <td id="time">1.327</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2262>MusicService</a></td> <td>2262</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">26.988</td> <td id="time">1.28514</td> <td id="time">1.327</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -559,7 +559,7 @@ WHERE
     t2._type = 127          AND
     ((t3.extension = 'mpg' OR t3.extension = 'wmv' OR t3.extension = 'avi') AND tl1005.coll = t2.id AND tl1005.item IN (104411061))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2302>MusicService</a></td> <td>2302</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">18.107</td> <td id="time">0.862238</td> <td id="time">1.245</td> <td id="rows">21</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2302>MusicService</a></td> <td>2302</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">18.107</td> <td id="time">0.862238</td> <td id="time">1.245</td> <td id="rows">21</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -608,7 +608,7 @@ WHERE
     t5._type = 33           AND
     (t6.extension = 'wav' AND tl1006.coll = t5.id AND tl1006.item IN (104411061))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2304>MusicService</a></td> <td>2304</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">20.611</td> <td id="time">0.981476</td> <td id="time">1.722</td> <td id="rows">21</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2304>MusicService</a></td> <td>2304</td> <td>state51::Base::fetch </td> <td>21</td> <td id="time">20.611</td> <td id="time">0.981476</td> <td id="time">1.722</td> <td id="rows">21</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -694,9 +694,9 @@ WHERE
     t2._type IN (58, 59)    AND
     t4.coll = 1645988 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L962>Use</a></td> <td>962</td> <td>state51::Base::insert </td> <td>12</td> <td id="time">2.282</td> <td id="time">0.190167</td> <td id="time">0.339</td> <td id="rows">4</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Relationship/Limited.pm#L92>Relationship/Limited</a></td> <td>92</td> <td>state51::Base::insert </td> <td>10</td> <td id="time">44.296</td> <td id="time">4.4296</td> <td id="time">29.938</td> <td id="rows">4</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L8>encoding_to_transform</a></td> <td>8</td> <td>state51::Base::fetch_whole_class </td> <td>9</td> <td id="time">1101.35</td> <td id="time">122.373</td> <td id="time">1080.19</td> <td id="rows">3348</td> <td id="rows">372</td> <td id="rows">372</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L962>Use</a></td> <td>962</td> <td>state51::Base::insert </td> <td>12</td> <td id="time">2.282</td> <td id="time">0.190167</td> <td id="time">0.339</td> <td id="rows">4</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Relationship/Limited.pm#L92>Relationship/Limited</a></td> <td>92</td> <td>state51::Base::insert </td> <td>10</td> <td id="time">44.296</td> <td id="time">4.4296</td> <td id="time">29.938</td> <td id="rows">4</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L8>encoding_to_transform</a></td> <td>8</td> <td>state51::Base::fetch_whole_class </td> <td>9</td> <td id="time">1101.35</td> <td id="time">122.373</td> <td id="time">1080.19</td> <td id="rows">3348</td> <td id="rows">372</td> <td id="rows">372</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -721,7 +721,7 @@ FROM
 WHERE
     t2.id = t3.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L58>Encoding</a></td> <td>58</td> <td>state51::Base::friends </td> <td>9</td> <td id="time">54.292</td> <td id="time">6.03244</td> <td id="time">24.367</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L58>Encoding</a></td> <td>58</td> <td>state51::Base::friends </td> <td>9</td> <td id="time">54.292</td> <td id="time">6.03244</td> <td id="time">24.367</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -746,7 +746,7 @@ WHERE
     t5.id = t6.id           AND
     (t6.entry = 6674362)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L67>Encoding</a></td> <td>67</td> <td>state51::Base::fetch </td> <td>7</td> <td id="time">880.333</td> <td id="time">125.762</td> <td id="time">875.295</td> <td id="rows">115</td> <td id="rows">16.4286</td> <td id="rows">4</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L67>Encoding</a></td> <td>67</td> <td>state51::Base::fetch </td> <td>7</td> <td id="time">880.333</td> <td id="time">125.762</td> <td id="time">875.295</td> <td id="rows">115</td> <td id="rows">16.4286</td> <td id="rows">4</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -796,7 +796,7 @@ WHERE
     t5._type IN (156, 188, 198)    AND
     (tl1003.coll = t5.id AND tl1003.item IN (6674362))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L68>Encoding</a></td> <td>68</td> <td>state51::Base::fetch </td> <td>7</td> <td id="time">210.484</td> <td id="time">30.0691</td> <td id="time">192.262</td> <td id="rows">12</td> <td id="rows">1.71429</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Encoding.pm#L68>Encoding</a></td> <td>68</td> <td>state51::Base::fetch </td> <td>7</td> <td id="time">210.484</td> <td id="time">30.0691</td> <td id="time">192.262</td> <td id="rows">12</td> <td id="rows">1.71429</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -846,7 +846,7 @@ WHERE
     t2._type IN (156, 188, 198)    AND
     (tl1003.coll = t2.id AND tl1003.item IN (1))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L239>ReleaseFormat</a></td> <td>239</td> <td>state51::Base::update </td> <td>6</td> <td id="time">1.931</td> <td id="time">0.321833</td> <td id="time">0.602</td> <td id="rows">2</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L239>ReleaseFormat</a></td> <td>239</td> <td>state51::Base::update </td> <td>6</td> <td id="time">1.931</td> <td id="time">0.321833</td> <td id="time">0.602</td> <td id="rows">2</td> <td id="rows">0.333333</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE
     state51__Album
 SET
     `packshot` = '104514886',
@@ -971,8 +971,8 @@ WHERE
     t8.id = t9.id           AND
     (t9.entry = 95950511)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L660>View/Ed/Base</a></td> <td>660</td> <td>state51::Base::insert </td> <td>5</td> <td id="time">92.419</td> <td id="time">18.4838</td> <td id="time">64.51</td> <td id="rows">2</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L8>encoding_to_transform</a></td> <td>8</td> <td>state51::Base::load </td> <td>5</td> <td id="time">1.577</td> <td id="time">0.3154</td> <td id="time">0.386</td> <td id="rows">5</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L660>View/Ed/Base</a></td> <td>660</td> <td>state51::Base::insert </td> <td>5</td> <td id="time">92.419</td> <td id="time">18.4838</td> <td id="time">64.51</td> <td id="rows">2</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L8>encoding_to_transform</a></td> <td>8</td> <td>state51::Base::load </td> <td>5</td> <td id="time">1.577</td> <td id="time">0.3154</td> <td id="time">0.386</td> <td id="rows">5</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Encoding.include_packshot_in_encode,
     state51__Encoding.include_metadata_in_encode,
@@ -995,7 +995,7 @@ FROM
 WHERE
     state51__Base.id = '6377316'	AND
     state51__Base.id = state51__Encoding.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L10>encoding_to_transform</a></td> <td>10</td> <td>state51::Base::fetch_whole_class </td> <td>5</td> <td id="time">8.587</td> <td id="time">1.7174</td> <td id="time">3.868</td> <td id="rows">1860</td> <td id="rows">372</td> <td id="rows">372</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/encoding_to_transform.pm#L10>encoding_to_transform</a></td> <td>10</td> <td>state51::Base::fetch_whole_class </td> <td>5</td> <td id="time">8.587</td> <td id="time">1.7174</td> <td id="time">3.868</td> <td id="rows">1860</td> <td id="rows">372</td> <td id="rows">372</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1020,7 +1020,7 @@ FROM
 WHERE
     t2.id = t3.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L454>View/Ed/Base</a></td> <td>454</td> <td>state51::Base::insert </td> <td>5</td> <td id="time">0.917</td> <td id="time">0.1834</td> <td id="time">0.434</td> <td id="rows">2</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L454>View/Ed/Base</a></td> <td>454</td> <td>state51::Base::insert </td> <td>5</td> <td id="time">0.917</td> <td id="time">0.1834</td> <td id="time">0.434</td> <td id="rows">2</td> <td id="rows">0.4</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">UPDATE Tangram SET mark = LAST_INSERT_ID(mark + 1)</div></td></tr>
 <tr><td>(eval 3090)</td> <td>1</td> <td>Tangram::RefOnDemand::FETCH </td> <td>4</td> <td id="time">1.366</td> <td id="time">0.3415</td> <td id="time">0.405</td> <td id="rows">4</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Encoding.include_packshot_in_encode,
@@ -1067,7 +1067,7 @@ FROM
 WHERE
     state51__Base.id = '63018743'	AND
     state51__Base.id = state51__Encoding.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L470>MusicService</a></td> <td>470</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">8.416</td> <td id="time">4.208</td> <td id="time">4.22</td> <td id="rows">42</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L470>MusicService</a></td> <td>470</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">8.416</td> <td id="time">4.208</td> <td id="time">4.22</td> <td id="rows">42</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1116,7 +1116,7 @@ WHERE
     t2._type = 33           AND
     (t3.extension = 'wav' AND tl1001.coll = t2.id AND tl1001.item IN (104411061,104411065,104411069,104411094,104411122,104411131,104411153,104411184,104411345,104411376,104411384,104411406,104411420,104411428,104411438,104411446,104411454,104411465,104411474,104411497,104411522))
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/FileTransform.pm#L22>FileTransform</a></td> <td>22</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">140.52</td> <td id="time">70.26</td> <td id="time">78.393</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/FileTransform.pm#L22>FileTransform</a></td> <td>22</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">140.52</td> <td id="time">70.26</td> <td id="time">78.393</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__File.filesize,
     state51__File.stored,
@@ -1160,7 +1160,7 @@ FROM
 WHERE
     state51__Base.id = '6950036'	AND
     state51__Base.id = state51__File.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L474>MusicService</a></td> <td>474</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">7.925</td> <td id="time">3.9625</td> <td id="time">4.032</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L474>MusicService</a></td> <td>474</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">7.925</td> <td id="time">3.9625</td> <td id="time">4.032</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1232,8 +1232,8 @@ WHERE
     t2.id = t3.id           AND
     t4.coll = 104411058 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/SQLHacks.pm#L26>SQLHacks</a></td> <td>26</td> <td>state51::Tangram::Driver::mysql::Storage::__ANON__ </td> <td>2</td> <td id="time">0.455</td> <td id="time">0.2275</td> <td id="time">0.236</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">select last_sync from Tangram</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L771>Use</a></td> <td>771</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">5.389</td> <td id="time">2.6945</td> <td id="time">2.761</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/SQLHacks.pm#L26>SQLHacks</a></td> <td>26</td> <td>state51::Tangram::Driver::mysql::Storage::__ANON__ </td> <td>2</td> <td id="time">0.455</td> <td id="time">0.2275</td> <td id="time">0.236</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">select last_sync from Tangram</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L771>Use</a></td> <td>771</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">5.389</td> <td id="time">2.6945</td> <td id="time">2.761</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1289,7 +1289,7 @@ FROM
 WHERE
     state51__Base.id = '57753805'	AND
     state51__Base.id = state51__Organisation.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/test_itms_meta.pm#L19>test_itms_meta</a></td> <td>19</td> <td>state51::Base::load </td> <td>2</td> <td id="time">1.113</td> <td id="time">0.5565</td> <td id="time">0.603</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/test_itms_meta.pm#L19>test_itms_meta</a></td> <td>19</td> <td>state51::Base::load </td> <td>2</td> <td id="time">1.113</td> <td id="time">0.5565</td> <td id="time">0.603</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Album.packshot,
     state51__Album.packshot_type,
@@ -1391,7 +1391,7 @@ FROM
 WHERE
     state51__Base.id = '21364914'	AND
     state51__Base.id = state51__MusicSet.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L87>MusicService</a></td> <td>87</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.207</td> <td id="time">0.6035</td> <td id="time">0.686</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L87>MusicService</a></td> <td>87</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.207</td> <td id="time">0.6035</td> <td id="time">0.686</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1440,7 +1440,7 @@ WHERE
     t2._type IN (156, 188, 198)    AND
     (t3.name = 'iTunes Music Store')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L390>MusicService</a></td> <td>390</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.241</td> <td id="time">0.6205</td> <td id="time">0.64</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L390>MusicService</a></td> <td>390</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.241</td> <td id="time">0.6205</td> <td id="time">0.64</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -1468,7 +1468,7 @@ WHERE
     t5._type IN (101, 102, 103)    AND
     (t6.type = 'RetailLicensor' AND t6.asset = 104411058)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L1148>Use</a></td> <td>1148</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">0.801</td> <td id="time">0.4005</td> <td id="time">0.41</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Use.pm#L1148>Use</a></td> <td>1148</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">0.801</td> <td id="time">0.4005</td> <td id="time">0.41</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -1523,7 +1523,7 @@ FROM
 WHERE
     state51__Base.id = '20182459'	AND
     state51__Base.id = state51__Source.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L2229>ReleaseFormat</a></td> <td>2229</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.822</td> <td id="time">0.411</td> <td id="time">0.427</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L2229>ReleaseFormat</a></td> <td>2229</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.822</td> <td id="time">0.411</td> <td id="time">0.427</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__File.filesize,
     state51__File.stored,
@@ -1574,7 +1574,7 @@ WHERE
     t5.id = t6.id           AND
     t7.coll = 57753805 AND t7.item = t5.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/test_itms_meta.pm#L27>test_itms_meta</a></td> <td>27</td> <td>state51::Base::load </td> <td>2</td> <td id="time">15.32</td> <td id="time">7.66</td> <td id="time">15.086</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/test_itms_meta.pm#L27>test_itms_meta</a></td> <td>27</td> <td>state51::Base::load </td> <td>2</td> <td id="time">15.32</td> <td id="time">7.66</td> <td id="time">15.086</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Request.identifier_unique,
     state51__Request.notes,
@@ -1620,7 +1620,7 @@ WHERE
     t2._type IN (246, 247, 260, 267, 258)    AND
     t4.coll = 104411058 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService/ITMS.pm#L128>MusicService/ITMS</a></td> <td>128</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.721</td> <td id="time">0.8605</td> <td id="time">0.981</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService/ITMS.pm#L128>MusicService/ITMS</a></td> <td>128</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.721</td> <td id="time">0.8605</td> <td id="time">0.981</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t5.id,
     t5._type,
     t5.create_time,
@@ -1692,7 +1692,7 @@ WHERE
     t5._type = 32           AND
     (t6.source = 20182459 AND t6.status = 'live' AND t6.barcode = '810523013810')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Relationship/Limited.pm#L66>Relationship/Limited</a></td> <td>66</td> <td>Tangram::CollOnDemand::FETCH </td> <td>2</td> <td id="time">0.999</td> <td id="time">0.4995</td> <td id="time">0.591</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Relationship/Limited.pm#L66>Relationship/Limited</a></td> <td>66</td> <td>Tangram::CollOnDemand::FETCH </td> <td>2</td> <td id="time">0.999</td> <td id="time">0.4995</td> <td id="time">0.591</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t8.id,
     t8._type,
     t8.create_time,
@@ -1806,7 +1806,7 @@ WHERE
     t2._type IN (53, 264, 193, 127, 33, 265, 54, 266, 238, 240, 157, 263, 242)    AND
     t4.coll = 104411058 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L233>MusicService</a></td> <td>233</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">0.659</td> <td id="time">0.3295</td> <td id="time">0.34</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L233>MusicService</a></td> <td>233</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">0.659</td> <td id="time">0.3295</td> <td id="time">0.34</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1821,7 +1821,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.name = 'ministry of sound media catalogue')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1248>ReleaseFormat</a></td> <td>1248</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.697</td> <td id="time">0.8485</td> <td id="time">0.864</td> <td id="rows">42</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1248>ReleaseFormat</a></td> <td>1248</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.697</td> <td id="time">0.8485</td> <td id="time">0.864</td> <td id="rows">42</td> <td id="rows">21</td> <td id="rows">21</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -1906,7 +1906,7 @@ WHERE
     t5._type = 22           AND
     t7.coll = 3143598 AND t7.item = t5.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L910>ReleaseFormat</a></td> <td>910</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>2</td> <td id="time">12.355</td> <td id="time">6.1775</td> <td id="time">10.829</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT DISTINCT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L910>ReleaseFormat</a></td> <td>910</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>2</td> <td id="time">12.355</td> <td id="time">6.1775</td> <td id="time">10.829</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT DISTINCT
     t7.id,
     t7._type,
     t7.create_time,
@@ -1943,7 +1943,7 @@ WHERE
     t7._type = 158          AND
     (tl1003.coll = t5.id AND tl1003.item = 104411058 AND tl1004.coll = t7.id AND tl1004.item = t5.id AND t8.batch_is_test = 0 AND t8.status = 'complete' AND t8.musicservice = 3143598) AND t5._type IN (157) AND t6.id = t5.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService/ITMS.pm#L370>MusicService/ITMS</a></td> <td>370</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.814</td> <td id="time">0.907</td> <td id="time">0.945</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService/ITMS.pm#L370>MusicService/ITMS</a></td> <td>370</td> <td>state51::Base::fetch </td> <td>2</td> <td id="time">1.814</td> <td id="time">0.907</td> <td id="time">0.945</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2033,8 +2033,8 @@ WHERE
     t2._type = 261          AND
     t4.coll = 3143598 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/SQLHacks.pm#L986>SQLHacks</a></td> <td>986</td> <td>state51::Tangram::Driver::mysql::Storage::__ANON__ </td> <td>2</td> <td id="time">149.804</td> <td id="time">74.902</td> <td id="time">102.816</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">INSERT INTO scribe (ip, cookie, class, website, role_id, data, priority) VALUES ('146.101.142.35', '0.714973010196449', 'nonweb', 'test_itms_meta.pl', '15274', '  checking format is ok for export: part 1 of <<The Clean Up Man by Young Buck (C1001)>>', 'trace')</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1455>ReleaseFormat</a></td> <td>1455</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.653</td> <td id="time">0.3265</td> <td id="time">0.337</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/SQLHacks.pm#L986>SQLHacks</a></td> <td>986</td> <td>state51::Tangram::Driver::mysql::Storage::__ANON__ </td> <td>2</td> <td id="time">149.804</td> <td id="time">74.902</td> <td id="time">102.816</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">INSERT INTO scribe (ip, cookie, class, website, role_id, data, priority) VALUES ('146.101.142.35', '0.714973010196449', 'nonweb', 'test_itms_meta.pl', '15274', '  checking format is ok for export: part 1 of <<The Clean Up Man by Young Buck (C1001)>>', 'trace')</div></td></tr>
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1455>ReleaseFormat</a></td> <td>1455</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.653</td> <td id="time">0.3265</td> <td id="time">0.337</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Classification.short_name,
     state51__Classification.name,
@@ -2046,7 +2046,7 @@ FROM
 WHERE
     state51__Base.id = '5842808'	AND
     state51__Base.id = state51__Classification.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1482>ReleaseFormat</a></td> <td>1482</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.701</td> <td id="time">0.3505</td> <td id="time">0.383</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/ReleaseFormat.pm#L1482>ReleaseFormat</a></td> <td>1482</td> <td>Tangram::RefOnDemand::FETCH </td> <td>2</td> <td id="time">0.701</td> <td id="time">0.3505</td> <td id="time">0.383</td> <td id="rows">2</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__Classification.short_name,
     state51__Classification.name,
@@ -2059,7 +2059,7 @@ FROM
 WHERE
     state51__Base.id = '5842330'	AND
     state51__Base.id = state51__Classification.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L276>View/Ed/Base</a></td> <td>276</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>1</td> <td id="time">0.603</td> <td id="time">0.603</td> <td id="time">0.603</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Base.pm#L276>View/Ed/Base</a></td> <td>276</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>1</td> <td id="time">0.603</td> <td id="time">0.603</td> <td id="time">0.603</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2085,7 +2085,7 @@ WHERE
     t2.id = t3.id           AND
     (t3.name like 'ripper wav%%')
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L610>Request/Export</a></td> <td>610</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">66.437</td> <td id="time">66.437</td> <td id="time">66.437</td> <td id="rows">84</td> <td id="rows">84</td> <td id="rows">84</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L610>Request/Export</a></td> <td>610</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">66.437</td> <td id="time">66.437</td> <td id="time">66.437</td> <td id="rows">84</td> <td id="rows">84</td> <td id="rows">84</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2115,7 +2115,7 @@ WHERE
 LIMIT
     1000
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MailService.pm#L31>MailService</a></td> <td>31</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>1</td> <td id="time">137.988</td> <td id="time">137.988</td> <td id="time">137.988</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MailService.pm#L31>MailService</a></td> <td>31</td> <td>state51::Tangram::Driver::mysql::Storage::select </td> <td>1</td> <td id="time">137.988</td> <td id="time">137.988</td> <td id="time">137.988</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2154,7 +2154,7 @@ ORDER BY
 LIMIT
     8
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L608>Request/Export</a></td> <td>608</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">77.561</td> <td id="time">77.561</td> <td id="time">77.561</td> <td id="rows">931</td> <td id="rows">931</td> <td id="rows">931</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L608>Request/Export</a></td> <td>608</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">77.561</td> <td id="time">77.561</td> <td id="time">77.561</td> <td id="rows">931</td> <td id="rows">931</td> <td id="rows">931</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2265,7 +2265,7 @@ WHERE
     t5._type IN (162, 195, 205, 209, 175, 176, 185)    AND
     t7.coll = 95950511 AND t7.item = t5.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L606>Request/Export</a></td> <td>606</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">186.563</td> <td id="time">186.563</td> <td id="time">186.563</td> <td id="rows">15</td> <td id="rows">15</td> <td id="rows">15</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L606>Request/Export</a></td> <td>606</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">186.563</td> <td id="time">186.563</td> <td id="time">186.563</td> <td id="rows">15</td> <td id="rows">15</td> <td id="rows">15</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2375,7 +2375,7 @@ WHERE
     t2.id = t3.id           AND
     t4.coll = 104514744 AND t4.item = t2.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L604>Request/Export</a></td> <td>604</td> <td>state51::Base::friends </td> <td>1</td> <td id="time">24.615</td> <td id="time">24.615</td> <td id="time">24.615</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L604>Request/Export</a></td> <td>604</td> <td>state51::Base::friends </td> <td>1</td> <td id="time">24.615</td> <td id="time">24.615</td> <td id="time">24.615</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t14.id,
     t14._type,
     t14.create_time,
@@ -2493,7 +2493,7 @@ FROM
 WHERE
     state51__Base.id = '63452650'	AND
     state51__Base.id = state51__OrganisationAttribute.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MailService.pm#L20>MailService</a></td> <td>20</td> <td>state51::Base::friends </td> <td>1</td> <td id="time">23.691</td> <td id="time">23.691</td> <td id="time">23.691</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MailService.pm#L20>MailService</a></td> <td>20</td> <td>state51::Base::friends </td> <td>1</td> <td id="time">23.691</td> <td id="time">23.691</td> <td id="time">23.691</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t11.id,
     t11._type,
     t11.create_time,
@@ -2518,7 +2518,7 @@ WHERE
     t11.id = t12.id         AND
     (t12.entry = 39661846)
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2355>MusicService</a></td> <td>2355</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">325.611</td> <td id="time">325.611</td> <td id="time">325.611</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2355>MusicService</a></td> <td>2355</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">325.611</td> <td id="time">325.611</td> <td id="time">325.611</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t8.id,
     t8._type,
     t8.create_time,
@@ -2598,7 +2598,7 @@ WHERE
     t5._type IN (101, 102, 103)    AND
     t7.coll = 104514744 AND t7.item = t5.id
 </div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L607>Request/Export</a></td> <td>607</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">14.128</td> <td id="time">14.128</td> <td id="time">14.128</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/Request/Export.pm#L607>Request/Export</a></td> <td>607</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">14.128</td> <td id="time">14.128</td> <td id="time">14.128</td> <td id="rows">0</td> <td id="rows">0</td> <td id="rows">0</td> <td id="query"><p></p><div class="toggle">SELECT
     t2.id,
     t2._type,
     t2.create_time,
@@ -2716,7 +2716,7 @@ FROM
 WHERE
     state51__Base.id = '6950035'	AND
     state51__Base.id = state51__Trackv2.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Edit.pm#L29>View/Ed/Edit</a></td> <td>29</td> <td>state51::Tangram::Driver::mysql::Storage::load </td> <td>1</td> <td id="time">0.279</td> <td id="time">0.279</td> <td id="time">0.279</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/View/Ed/Edit.pm#L29>View/Ed/Edit</a></td> <td>29</td> <td>state51::Tangram::Driver::mysql::Storage::load </td> <td>1</td> <td id="time">0.279</td> <td id="time">0.279</td> <td id="time">0.279</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     state51__Base.create_time,
     state51__TransformStep.include_packshot_in_encode,
     state51__TransformStep.include_metadata_in_encode,
@@ -2736,7 +2736,7 @@ FROM
 WHERE
     state51__Base.id = '105673380'	AND
     state51__Base.id = state51__TransformStep.id</div></td></tr>
-<tr><td><a href=https://badger.state51.co.uk/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2353>MusicService</a></td> <td>2353</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">45.605</td> <td id="time">45.605</td> <td id="time">45.605</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
+<tr><td><a href=https://our.server/cgi-bin/trac.cgi/browser/trunk/lib/state51/MusicService.pm#L2353>MusicService</a></td> <td>2353</td> <td>state51::Base::fetch </td> <td>1</td> <td id="time">45.605</td> <td id="time">45.605</td> <td id="time">45.605</td> <td id="rows">1</td> <td id="rows">1</td> <td id="rows">1</td> <td id="query"><p></p><div class="toggle">SELECT
     t8.id,
     t8._type,
     t8.create_time,
