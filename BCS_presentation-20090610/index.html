@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Quanto - MySQLProxy query aggregator</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="pod2s5 0.08" />
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20090610" />
+<meta name="author" content="Tomas Doran" />
+<meta name="company" content="state51" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+
+<!-- embedded styles -->
+<style type="text/css" media="all">
+.imgcon {width: 525px; margin: 0 auto; padding: 0; text-align: center;}
+#anim {width: 270px; height: 320px; position: relative; margin-top: 0.5em;}
+#anim img {position: absolute; top: 42px; left: 24px;}
+img#me01 {top: 0; left: 0;}
+img#me02 {left: 23px;}
+img#me04 {top: 44px;}
+img#me05 {top: 43px;left: 36px;}
+</style>
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+<!--
+   tom AT cpan.org:
+   this will not work, it's not contained
+   in the downloadable S5
+   <script src="/mint/?js" type="text/javascript"></script></head>
+-->
+<body>
+
+<div class="layout">
+
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer">
+<h1>BCS &#8226; 20090610</h1>
+<h2>Quanto - MySQLProxy query aggregator</h2></div>
+</div><div class="slide">
+<h1>Quanto - MySQLProxy query aggregator
+
+</h1><p>Easy aggregation of your query statistics.
+
+</p><code>    Tomas Doran &lt; t0m@state51.co.uk &gt; </code></div>
+<div class="slide">
+<h1>Query comments
+
+</h1><p>Change your code to emit a comment for each query.
+
+</p><code>    /* Filename@LINE_NO@subroutine */ <br>
+        SELECT * <br>
+        FROM giant_table <br>
+        JOIN other_giant_table <br>
+          WHERE unindexed_field = 'hahaha';<br> </code><p>You can see the comment when you <code>SHOW PROCESSLIST</code>
+
+</p><p>Really handy!
+
+</p></div>
+<div class="slide">
+<h1>Filename &amp; line + svn blame 
+
+</h1><p><img src="stab.jpg" />
+
+
+</p><p>No use for lots of little queries in a loop though..
+
+</p></div>
+<div class="slide">
+<h1>We generate by
+
+</h1><p><img src="upstack.png" />
+
+
+</p><p><b>Example only</b> - apply to your language of choice.
+
+</p></div>
+<div class="slide">
+<h1>And monkeypatch DBI
+
+</h1><p><img src="monkeypatch.png" />
+
+
+</p><p><b>Example only</b> (although our technique is similar in ruby)
+
+</p></div>
+<div class="slide">
+<h1>Quanto
+
+</h1><p>Extension to MySQLProxy written in Lua.
+
+</p><p>Filters and aggregates your query comments.
+
+</p><p>Stores timing information, counts number of calls,
+row counts returned etc.
+
+</p><p>Adds extra commands to the MySQL vocabulary to get query stats back.
+CGI + JQuery to display in browser.
+
+</p><p>Solves the lots of queries in a loop problem.
+
+</p><p><b>NOT</b> perl specific.
+
+</p></div>
+<div class="slide">
+<h1>Screen shot 1
+
+</h1><p><img src="quanto_shot1.png" />
+
+
+</p></div>
+<div class="slide">
+<h1>Screen shot 2
+
+</h1><p><img src="quanto_shot2.png" />
+
+
+</p></div>
+<div class="slide">
+<h1>Questions?
+
+</h1><p>Code and presentation are on github:
+
+</p><code>    http://github.com/andym/Quanto </code><p>Patches welcome, especially solutions for generating query comments in your
+language of choice, or a less crappy cgi.
+
+</p><p>Thanks!
+
+</p></div></body></html>
