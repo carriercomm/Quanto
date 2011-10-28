@@ -22,7 +22,7 @@ end
 -- or tag it so it hits read_query_result and let it past
 function read_query( packet )
    if packet:byte() == proxy.COM_QUERY then
-      
+
       -- check for commands
       local f_s, f_e, command = string.find(packet, "^%s*(%w+)", 2)
       local option
@@ -51,10 +51,10 @@ function read_query( packet )
                               v.norm_query
                            }
          end
-         
+
          proxy.response.type = proxy.MYSQLD_PACKET_OK
          proxy.response.resultset = {
-            fields = { 
+            fields = {
                { type = proxy.MYSQL_TYPE_STRING, name = "module : line : called", },
                { type = proxy.MYSQL_TYPE_LONG,   name = "times called", },
                { type = proxy.MYSQL_TYPE_STRING, name = "total time (ms)", },
@@ -64,10 +64,10 @@ function read_query( packet )
                { type = proxy.MYSQL_TYPE_LONG,   name = "row max", },
                { type = proxy.MYSQL_TYPE_STRING, name = "row avg", },
                { type = proxy.MYSQL_TYPE_STRING, name = "query", },
-            }, 
-            rows = results                                
+            },
+            rows = results
          }
-         
+
          -- we have our result, send it back
          return proxy.PROXY_SEND_RESULT
       elseif command and string.lower(command) == "clear" and string.lower(option) == "stats" then
@@ -75,34 +75,34 @@ function read_query( packet )
 
          -- it would be good if this cleared the query cache at this point as well
          -- or maybe we re-write every query to turn the cache off around it?
-         
+
          proxy.response.type = proxy.MYSQLD_PACKET_OK
-         proxy.response.resultset = {            
-            fields = { 
+         proxy.response.resultset = {
+            fields = {
                { type = proxy.MYSQL_TYPE_LONG, name = "status" },
-            }, 
-            rows = { 
+            },
+            rows = {
                { 'cleared' }
             }
          }
-                  
+
          return proxy.PROXY_SEND_RESULT
       end
-      
+
       -- if you don't do this, then read_query_result isn't triggered
       proxy.queries:append(1, packet, { resultset_is_needed = true} )
-      
+
       return proxy.PROXY_SEND_QUERY
    end
 end
 
 ---
--- read_query_result() is called when we receive a query result 
+-- read_query_result() is called when we receive a query result
 -- from the server
 --
 -- inj.query_time is the query-time in micro-seconds
--- 
--- @return 
+--
+-- @return
 --   * nothing or proxy.PROXY_SEND_RESULT to pass the result-set to the client
 --
 
@@ -112,20 +112,20 @@ function read_query_result(inj)
 
     if packet:byte() == proxy.COM_QUERY then
        -- attempt to skip if it's not a s51 query
-       if (string.find(packet:sub(2),"[*]/")) then 
+       if (string.find(packet:sub(2),"[*]/")) then
           local call_fingerprint = packet:sub(string.find(packet:sub(2),"/[*]")+4,
                                               string.find(packet:sub(2),"[*]/")
                                            )
           local i_row_count = 0
-          local i_row_max = 0          
+          local i_row_max = 0
           -- rows is a function, not an array
           if inj.resultset.rows then
              for row in inj.resultset.rows do
                 i_row_count = i_row_count + 1
-                i_row_max   = i_row_max + 1     
+                i_row_max   = i_row_max + 1
              end
           end
-          
+
           if (proxy.global.profile_stats[call_fingerprint]) then
              local max_time = proxy.global.profile_stats[call_fingerprint].max_time
              if inj.query_time > max_time then
@@ -136,7 +136,7 @@ function read_query_result(inj)
              if i_row_max > row_max then
                 row_max = i_row_max
              end
-             
+
              proxy.global.profile_stats[call_fingerprint] = {count = proxy.global.profile_stats[call_fingerprint].count+1,
                                                              time  = proxy.global.profile_stats[call_fingerprint].time+inj.query_time,
                                                              max_time = max_time,
@@ -147,7 +147,7 @@ function read_query_result(inj)
           else
              -- local tokens = tokenizer.tokenize(inj.query)
              -- local norm_query = tokenizer.normalize(tokens)
-             
+
              proxy.global.profile_stats[call_fingerprint] = {count      = 1,
                                                              time       = inj.query_time,
                                                              max_time   = inj.query_time,
