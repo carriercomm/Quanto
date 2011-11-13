@@ -26,17 +26,17 @@ sub draw_stats {
     }
 
     if ($q->param('clear stats')) {
-        clear_stats();        
+        clear_stats();
     }
 
     my $table;
     my $stats = get_stats();
     foreach my $row (@{$stats}) {
-        my $module = $row->{module};        
+        my $module = $row->{module};
         if ($row->{uri}) {
-            $module = '<a href='.$row->{uri}.'>'.$row->{module}.'</a>';            
+            $module = '<a href='.$row->{uri}.'>'.$row->{module}.'</a>';
         }
-        
+
         $table .= $q->Tr($q->td([$module,
                                  $row->{line},
                                  $row->{called},
@@ -52,7 +52,7 @@ sub draw_stats {
                          $q->td({id => 'query'},'<p></p><div class="toggle">'.
                                                 $row->{query}.
                                                 '</div>'),
-                        )."\n";        
+                        )."\n";
     }
     $table = $q->table({-border => 1},
                        $q->Tr($q->th({colspan => 4},''),
@@ -74,7 +74,7 @@ sub draw_stats {
                              )."\n",
                        $table
                    );
-    
+
     print $q->header();
     print '<div id="content"></div>';
     print $q->start_html(
@@ -82,20 +82,20 @@ sub draw_stats {
         -script=>[{ -src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js',
                   },
                   { -src => '/quanto.js',
-                  }, 
-                 ],        
+                  },
+                 ],
         -style => {'src' => '/style.css'},
         -head  => meta({-http_equiv => 'refresh',
                         -content    => 30,
                        }
                       ),
     );
-    
+
     print $q->start_form;
     print $q->submit('clear stats');
     print $q->end_form;
     print "\n";
-        
+
     print $table;
     print $q->end_html;
 }
@@ -187,23 +187,23 @@ sub fail_do_show_stats {
 #
 
 sub get_dbh {
-    my $dbh = DBI->connect($dbi_str, 
-			   $db_user, 
+    my $dbh = DBI->connect($dbi_str,
+			   $db_user,
 			   $db_pass,
 			   { RaiseError => 1}
 			   );
     if (not $dbh) {
 	fail_no_dbh($DBI::errstr);
     }
-    
+
     # ping it? see if it's the proxy or the real thing?
-   
+
     return $dbh;
 }
 
-sub get_stats {    
+sub get_stats {
     my $dbh = get_dbh();
-    
+
     my $stats;
 
     eval {
@@ -221,7 +221,7 @@ sub get_stats {
     my @result;
     foreach my $key (keys %{$stats}) {
         my $row = $stats->{$key};
-                        
+
         my %line;
         ($line{module},$line{line},$line{called}) = split('@', $row->{'module : line : called'});
         $line{times} = $row->{'times called'};
@@ -232,12 +232,12 @@ sub get_stats {
         $line{rows_max} = $row->{'row max'};
         $line{rows_total} = $row->{'row count'};
         $line{query} = $row->{'query'};
-                        
+
         $line{uri} =  make_uri($line{module}, $line{line});
-        
-        push @result, \%line;        
+
+        push @result, \%line;
     }
-    
+
     @result = sort {$b->{$sort_field} <=> $a->{$sort_field}} @result;
 
     return \@result;
@@ -245,7 +245,7 @@ sub get_stats {
 
 sub clear_stats {
     my $dbh = get_dbh();
-        
+
     # cope nicely if that's not supported or empty
     my $rv = $dbh->do('clear stats');
     $rv = $dbh->do('flush query cache');
@@ -253,7 +253,7 @@ sub clear_stats {
 
 sub make_uri {
     my ($module, $line) = @_;
-    
+
     my $result = '';
 
     # maybe if you can't -e the .pm in the lib dir?
@@ -263,8 +263,8 @@ sub make_uri {
     if (($module !~ /eval/) and (substr($module,0,1) ne '/')) {
         $result = $base_source_url.$module.'.pm#L'.$line;
     }
-    
-    return $result;    
+
+    return $result;
 }
 
 ##
